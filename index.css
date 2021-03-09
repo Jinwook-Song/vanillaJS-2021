@@ -6,8 +6,12 @@ body {
   cursor: pointer;
 }
 
+li span {
+  margin: 5px;
+}
+
 body {
-  color: #34495e;
+  color: white;
 }
 
 .clicked {
