@@ -1,23 +1,22 @@
 const body = document.querySelector("body");
 
-const IMG_NUMBBER = 3;
-
+const IMG_NUMBBER = 10;
 
 function paintImage(imgNumber) {
-    const image = new Image();
-    image.src = `images/${imgNumber + 1}.jpg`;
-    image.classList.add("bgImage");
-    body.appendChild(image);
+  const image = new Image();
+  image.src = `images/${imgNumber + 1}.jpg`;
+  image.classList.add("bgImage");
+  body.appendChild(image);
 }
 
 function genRandom() {
-    const number = Math.floor(Math.random() * IMG_NUMBBER);
-    return number;
+  const number = Math.floor(Math.random() * IMG_NUMBBER);
+  return number;
 }
 
 function init() {
-    const randomNumber = genRandom();
-    paintImage(randomNumber);
+  const randomNumber = genRandom();
+  paintImage(randomNumber);
 }
 
 init();

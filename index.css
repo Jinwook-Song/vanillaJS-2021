@@ -1,17 +1,78 @@
 body {
-  background-color: #677886;
+  background-color: #c3e2fc;
 }
 
+header {
+  text-align: end;
+  margin: 20px;
+  color: antiquewhite;
+  text-shadow: 0px 3px 5px black;
+}
+main {
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+input,
+h4 {
+  border: none;
+  color: antiquewhite;
+  text-shadow: 0px 1px 3px black;
+  width: 300px;
+  height: 30px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 20px;
+  background-color: transparent;
+  border-bottom: 1px solid antiquewhite;
+}
+
+h4 {
+  font-size: 32px;
+  border: none;
+}
+
+input::placeholder {
+  text-shadow: 0px 2px 3px antiquewhite;
+  color: rgb(74, 75, 77);
+  font-size: 20px;
+}
+
+input:focus {
+  border-bottom: 3px solid antiquewhite;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+.js-clock h1 {
+  font-size: 80px;
+  text-shadow: 5px 5px 10px black;
+}
 .btn {
   cursor: pointer;
+}
+ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
 }
 
 li span {
   margin: 5px;
-}
-
-body {
-  color: white;
+  color: antiquewhite;
+  text-shadow: 0px 1px 3px black;
 }
 
 .clicked {
